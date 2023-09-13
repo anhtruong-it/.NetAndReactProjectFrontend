@@ -15,5 +15,7 @@ export default function AboutPage() {
                 <Button variant="contained" onClick={() => agent.TestErrors.getValidationError().catch(error => console.log(error))}>Test Validation Error</Button>
             </ButtonGroup>
         </Container>
+
+        
     )
 }
