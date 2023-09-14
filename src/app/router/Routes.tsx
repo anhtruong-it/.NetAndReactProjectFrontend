@@ -5,17 +5,18 @@ import HomePage from "../../features/home/HomePage";
 import App from "../layout/App";
 import AboutPage from "../../features/about/AboutPage";
 import ProductDetails from "../../features/catalog/ProductDetails";
+import Basketpage from "../../features/basket/BasketPage";
 
 export const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
         children: [
-            {path: '', element: <HomePage />},
-            {path: 'catalog/', element: <Catalog />},
-            {path: 'catalog/:id', element: <ProductDetails />},
-            {path: 'contact', element: <ContactPage />},
-            {path: 'about', element: <AboutPage />},
-        ]
+            { path: '', element: <HomePage /> },
+            { path: 'catalog/', element: <Catalog /> },
+            { path: 'catalog/:id', element: <ProductDetails /> },
+            { path: 'contact', element: <ContactPage /> },
+            { path: 'about', element: <AboutPage /> },
+            { path: 'basket', element: <Basketpage /> }]
     }
 ])
